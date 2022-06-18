@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="thi_WCD:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>thi_WCD</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="thi_WCD-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="thi_WCD:war exploded" />
+    </root>
+  </artifact>
+</component>
