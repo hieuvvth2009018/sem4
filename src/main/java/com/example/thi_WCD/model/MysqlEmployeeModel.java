@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class MysqlEmployeeModel implements com.example.thi_WCD.model.EmployeeMod
             PreparedStatement preparedStatement =
                     connection.prepareStatement(SqlConstant.EMPLOYEE_INSERT);
             preparedStatement.setString(1, obj.getFullName());
-            preparedStatement.setString(2, obj.getBirthday());
+            preparedStatement.setString(2, obj.getBirthday().toString());
             preparedStatement.setString(3, obj.getAddress());
             preparedStatement.setString(4, obj.getPosition());
             preparedStatement.setString(5, obj.getDepartment());

@@ -1,12 +1,13 @@
 package com.example.thi_WCD.entity;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.HashMap;
 
 public class Employee {
     private int id;
     private String fullName;
-    private LocalDateTime birthday;
+    private String birthday;
     private String address;
     private String position;
     private String department;
@@ -14,7 +15,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String fullName, LocalDateTime birthday, String address, String position, String department) {
+    public Employee(String fullName, String birthday, String address, String position, String department) {
         this.fullName = fullName;
         this.birthday = birthday;
         this.address = address;
@@ -22,7 +23,7 @@ public class Employee {
         this.department = department;
     }
 
-    public Employee(int id, String fullName, LocalDateTime birthday, String address, String position, String department) {
+    public Employee(int id, String fullName, String birthday, String address, String position, String department) {
         this.id = id;
         this.fullName = fullName;
         this.birthday = birthday;
@@ -74,11 +75,11 @@ public class Employee {
         this.fullName = fullName;
     }
 
-    public LocalDateTime getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(LocalDateTime birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
