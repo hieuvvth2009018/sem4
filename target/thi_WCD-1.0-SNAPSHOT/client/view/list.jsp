@@ -1,4 +1,4 @@
-<%@ page import="com.example.EXAM_WCD_SEM4_2.entity.Employee" %>
+<%@ page import="com.example.thi_WCD.entity.Employee" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
